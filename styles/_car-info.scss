@@ -1,0 +1,75 @@
+.car-infos{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .car-info{
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+        @media (max-width: 768px){
+            
+            
+        }
+        
+        .img{
+            background-image: url(../images/wallpaperbetter.com_1920x1080.jpg);
+            width: 100%;
+            height: 100%;
+            min-height: 230px;
+            background-position: center;
+            background-size: cover;
+
+
+        }
+        .info{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: justify;
+            h4{
+                margin: 10% 2.5% 2.5% 2.5%;
+            }
+            p{
+                margin: 2.5% 10%;
+            }
+            h4,p{
+                color: #000;
+            }
+        }
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+        
+    }
+    .car-info-2{
+        .img{
+            background-image: url(../images/4x4.webp);
+            order: 1;
+        }
+        .info{
+            order: 2;
+        }
+        @media (max-width: 768px){
+            .img{
+                order: 2;
+            }
+            .info{
+                order: 1;
+            }
+        }
+    }
+    .car-info-3{
+        .img{
+            background-image: url(../images/harley.webp);
+        }
+    }
+    @media (max-width: 768px){
+        height: auto;
+    }
+
+}

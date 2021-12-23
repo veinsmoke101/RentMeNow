@@ -1,0 +1,24 @@
+$Gainsboro    : #DCDCDD;
+$French_Grey  : #C5C3C6;
+$My_Gray      : #46494C;
+$Fiord        : #4C5C68;
+$Scooter      : #1985A1;
+
+
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import "./nav";
+@import "./main";
+@import "./cards";
+@import "./car-info";
+@import "./truck";
+@import "./guarantees";
+@import "./footer";

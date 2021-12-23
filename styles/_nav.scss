@@ -1,0 +1,103 @@
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    .container{
+        width: auto;
+        margin:2% 5%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        label{
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .hamburger{
+            display: none;
+            position: relative;
+            z-index: 1;
+
+            user-select: none;
+            appearance: none;
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+
+           
+            &.is-active span:nth-child(1){
+                transform: translate(0px, -2px) rotate(45deg);
+                background-color: $Scooter;
+            }
+            &.is-active span:nth-child(2){
+                opacity: 0;
+                transform: translateX(15px);
+            }
+            &.is-active span:nth-child(3){
+                transform: translate(-3px, 3px) rotate(-45deg);
+                background-color: $Scooter;
+            }
+
+            span{
+                display: block;
+                height: 4px;
+                width: 33px;
+                margin-bottom: 5px;
+                position: relative;
+                border-radius: 6px;
+                background-color: white;
+                z-index: 1;
+                transform-origin: 0 0;
+                transition: 0.4s;
+            }
+            @media (max-width: 768px){
+                display: block;
+            }
+
+        }
+        .menu {
+            display: flex;
+            width: 50%;
+            justify-content: end;
+            align-items: center;
+            .nav-item a{
+                color: white;
+                font-weight:500;
+                margin-left: 16px;
+                transition: 0.4s;
+                border-radius: 99px;
+                padding: 8px 16px;
+                &.is-active,&:hover{
+                    background-color:$Scooter  ;
+                }
+            }
+            &.active{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                position: absolute;
+                z-index: -1;
+                background-color:$My_Gray ;
+                height: 80vh;
+                width: 100%;
+                top: 0;
+                left: 0;
+                .nav-item {
+                    margin: 5% 0;
+                }
+               
+                
+            }
+            @media (max-width: 768px){
+                display: none;
+            }
+        }
+
+
+    }
+}

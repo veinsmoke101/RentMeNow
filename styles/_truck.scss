@@ -1,0 +1,50 @@
+.truck{
+
+    background-image: url(../images/truck.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed ;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+
+    .color-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $Fiord;
+        opacity: .6;
+    }
+    .heading {
+        width: 100%;
+        padding:0 5%;
+        height: 80vh;
+        position: absolute;
+        color: white;
+        left: 0;
+        top: 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h2{
+            font-size: 43px;
+            margin: 20px;
+        }
+        p{           
+             margin: 20px;
+             font-weight: bold;
+        }
+        
+  
+        
+    }
+}
+
