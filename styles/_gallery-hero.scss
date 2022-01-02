@@ -11,6 +11,10 @@
     justify-content: end;
     align-items: center;
     position: relative;
+    @media (max-width:1400px) {
+        background-size: cover;
+        background-position:center;
+    }
     
 
     .color-overlay{

@@ -177,6 +177,13 @@ nav .container .menu.active .nav-item {
   position: relative;
 }
 
+@media (max-width: 1400px) {
+  .gallery-hero {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .gallery-hero .color-overlay {
   width: 100%;
   height: 100%;
@@ -231,12 +238,27 @@ nav .container .menu.active .nav-item {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .formulaire form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .formulaire form select {
   margin: 0 5% 0 2%;
   padding: 15px 26px;
   background-color: whitesmoke;
   border: none;
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .formulaire form select {
+    width: 70%;
+  }
 }
 
 .cars-gallery {
