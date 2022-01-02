@@ -245,6 +245,9 @@ nav .container .menu.active .nav-item {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .formulaire form label {
+    margin-top: 5%;
+  }
 }
 
 .formulaire form select {
