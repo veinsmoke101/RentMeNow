@@ -15,7 +15,9 @@
         background-size: cover;
         background-position:center;
     }
-    
+    @media (max-width:768px) {
+        height: 40vh;
+    }
 
     .color-overlay{
         width: 100%;

@@ -184,6 +184,12 @@ nav .container .menu.active .nav-item {
   }
 }
 
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 40vh;
+  }
+}
+
 .gallery-hero .color-overlay {
   width: 100%;
   height: 100%;
@@ -244,6 +250,7 @@ nav .container .menu.active .nav-item {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 60vh;
   }
   .formulaire form label {
     margin-top: 5%;
