@@ -37,6 +37,10 @@ nav .container label {
   color: white;
   font-weight: bold;
   font-size: 23px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 nav .container .hamburger {
@@ -169,9 +173,8 @@ nav .container .menu.active .nav-item {
 
 .contact-section .right {
   background-image: url(../images/wallpaperflare.com_wallpaper.jpg);
-  background-position: center;
+  background-position: left;
   background-size: cover;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,6 +444,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #46494C;
+  color: white;
 }
 
 footer .container {

@@ -1,0 +1,133 @@
+.cars-gallery{
+    color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .car{
+        cursor: pointer;
+        width: 350px;
+        height: 305px;
+        border: 1px $Gainsboro solid;
+        margin-bottom: 5%;
+        
+        &:hover .car-img span{  
+                background-color:$Scooter ;
+                color: white;
+                &::before{
+                    border-bottom: 35.33px solid $Scooter;
+                }
+        }
+        
+        .car-img{
+            width: 350px;
+            height: auto;
+            position: relative;
+            img {
+                width: 350px;
+                height: 200px;
+            }
+            span{
+                position: absolute;
+                bottom: 0;
+                right: 0.5%;
+                padding: 8px 26px;
+                background-color:$Gainsboro ;
+                transition: all 0.4s;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    
+                    position: absolute;
+                    bottom: 0;
+                    left: -43%;
+                    border-bottom: 35.33px solid $Gainsboro;
+                    border-left: 35px solid transparent;
+                    transition: all 0.4s;
+
+                }
+            }
+            
+        }
+        .car-name{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px $Gainsboro solid;
+            border-top: 1px $Gainsboro solid;
+            p{
+                font-weight: bolder;
+            }
+
+        }
+        .car-info{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            justify-content: space-around;
+            align-items: center;
+            background-color:$Gainsboro;
+            div{
+                display: flex;
+                width: auto;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    margin-right:5%;
+                    &.car-type-img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                }
+                
+            }
+        }
+        
+    }
+}
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    div{
+        cursor: pointer;
+        padding: 20px;
+        border: 1px solid $Gainsboro;
+        transition: 0.4s;
+        &.page{
+            padding:27.3px 30px;
+            font-weight: bolder;
+            &:hover{
+                color: white;
+                background-color: $Scooter;
+            }
+        }
+        &:not(.page):hover{
+            background-color: $Scooter;
+            img{
+                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(157deg) brightness(117%) contrast(100%);
+            }
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            transition: 0.4s;
+        }
+        
+    }
+    
+}

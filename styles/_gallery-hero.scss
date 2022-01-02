@@ -1,0 +1,50 @@
+.gallery-hero{
+
+    background-image: url(../images/maserati_car-wallpaper-1920x1200.jpg);
+    width: 100%;
+    height: 60vh;
+    background-position:top;
+    background-size: 100% auto;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    
+
+    .color-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $Fiord;
+        opacity: .7;
+    }
+    .heading {
+        width: 100%;
+        padding:0 5%;
+        height: 100%;
+        position: absolute;
+        color: white;
+        left: 0;
+        top: 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            font-size: 50px;
+            font-weight: bolder;
+            margin: 20px;
+        }
+        
+        
+      
+        
+    }
+}
+
