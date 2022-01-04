@@ -60,18 +60,26 @@
         form{
             display: flex;
             flex-direction: column;
+            
             .full-name{
                 display: flex;
                 margin: 5% 0;
                 width: 100%;
-
+                
+                @media (max-width:480px) {
+                    flex-direction: column;
+                }
                 .first-name,.last-name{
                     display: flex;
                     flex-direction: column;
                     margin:0 5%;
+                    
                     label{
                         color: white;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            margin: 3% 0;
+                        }
                     }
                     input{
                         height: 30px;
@@ -85,17 +93,21 @@
                         &::placeholder{
                             color: $French_Grey;
                         }
-                        
+                        @media (max-width:768px) {
+                            margin: 3% 0;
+                        }
                     }
 
                 }
             }
             .email-phone{
                 display: flex;
-                justify-content: space-between;
+                //justify-content: space-between;
                 margin: 5% 0;
                 width: 100%;
-
+                @media (max-width:480px) {
+                    flex-direction: column;
+                }
                 .email,.phone{
                     display: flex;
                     flex-direction: column;
@@ -103,6 +115,9 @@
                     label{
                         color: white;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            margin: 3% 0;
+                        }
                     }
                     input{
                         height: 30px;
@@ -116,7 +131,9 @@
                         &::placeholder{
                             color: $French_Grey;
                         }
-
+                        @media (max-width:768px) {
+                            margin: 3% 0;
+                        }
                     }
                 }
             }
@@ -130,7 +147,7 @@
                     font-weight: bold;
                 }
                 input{
-                    width: 100%;
+                    width: 122.5%;
                     height: 30px;
                     background-color: transparent;
                     border: none;
@@ -141,6 +158,12 @@
                     }
                     &::placeholder{
                         color: $French_Grey;
+                    }
+                    @media (max-width:480px) {
+                        width: 100%;
+                    }
+                    @media (max-width:768px) {
+                        width: 78%;
                     }
 
                 }
@@ -157,6 +180,10 @@
                 margin:5% ;
                 outline: none;
                 border: none;
+                
+            }
+            @media (max-width:768px) {
+                width: 80%;
             }
 
         }

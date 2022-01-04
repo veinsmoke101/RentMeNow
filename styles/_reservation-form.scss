@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     #formulaire{
-    height: 55vh;
+    height: 63vh;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin:4% 0;
         @media (max-width:768px) {
             flex-direction: column;
         }

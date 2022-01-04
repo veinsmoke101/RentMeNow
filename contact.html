@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/contact.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     <nav id="navbar">
@@ -39,30 +41,30 @@
         </div>
         <div class="left">
             <h2>Contact Us</h2>
-            <form action="">
+            <form id="form" action="">
                 <div class="full-name">
                     <div class="first-name">
                         <label for="first-name">First Name :</label>
-                        <input placeholder="First Name" type="text" name="first-name" id="">
+                        <input required placeholder="First Name" type="text" name="first-name" id="">
                     </div>
                     <div class="last-name">
                         <label for="last-name">Last Name :</label>
-                        <input placeholder="Last Name" type="text" name="first-name" id="">
+                        <input required placeholder="Last Name" type="text" name="last-name" id="">
                     </div>
                 </div>
                 <div class="email-phone">
                     <div class="email">
                         <label for="email">Email :</label>
-                        <input placeholder="Email@example.com" type="email" name="email" id="">
+                        <input required placeholder="Email@example.com" type="email" name="email" id="">
                     </div>
                     <div class="phone">
                         <label for="phone">Phone :</label>
-                        <input placeholder="phone number" type="tel" name="phone" id="">
+                        <input required placeholder="phone number" type="tel" name="phone" id="">
                     </div>
                 </div>
                 <div class="message">
                     <label for="message">Message :</label>
-                    <input placeholder="Write your message" type="text" name="message" id="">
+                    <input required placeholder="Write your message" type="text" name="message" id="">
                 </div>
                 <button type="submit">Submit</button>
             </form>
@@ -107,8 +109,9 @@
     </footer>
 
 
-    <script src="./script.js">
+    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
 
-    </script>
 </body>
 </html>

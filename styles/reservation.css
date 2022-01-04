@@ -238,7 +238,7 @@ nav .container .menu.active .nav-item {
 }
 
 .class .container #formulaire {
-  height: 55vh;
+  height: 63vh;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +273,7 @@ nav .container .menu.active .nav-item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 4% 0;
 }
 
 @media (max-width: 768px) {
